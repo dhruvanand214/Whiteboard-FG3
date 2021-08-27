@@ -219,6 +219,12 @@ hr {
   .sidebar {
     display: none;
   }
+
+  .show-sidebar {
+    display: inline;
+    position: fixed;
+    height: auto;
+  }
 }
 
 /* sidebar ends here */
