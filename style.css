@@ -111,6 +111,43 @@ body {
   height: 100%;
   object-fit: cover;
 }
+@media screen and (max-width:360px){
+    .logo{
+        height: 25px;
+        padding-top: 7px;
+        margin-left: 4px;
+    }
+    .search-bar {
+        display: none;
+    }
+
+    .search-btn{
+        display: none;
+    }
+    .user-options{
+        margin-top:-57px;
+    }
+}
+@media screen and (max-width:768px){
+    span{
+        height: 45px;
+        margin-right: 25px;
+    }
+    .logo{
+        height: 37px;
+        padding-top: 8px;
+        margin-left: 15px;
+    }
+    .search-bar{
+        width: 55%;
+    }
+
+    .user-options{
+        
+        margin-top:-7px;
+        height: 35px;
+    }
+}
 
 /* sidebar stylings by Dhruv Anand */
 
