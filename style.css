@@ -112,7 +112,7 @@ body {
   object-fit: cover;
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:422px){
     .logo{
         height: 25px;
         padding-top: 7px;
