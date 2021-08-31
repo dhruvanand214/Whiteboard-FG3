@@ -15,9 +15,9 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   height: 60px;
   background: #fff;
@@ -112,7 +112,7 @@ body {
   object-fit: cover;
 }
 
-@media screen and (max-width:422px){
+@media screen and (max-width:360px){
     .logo{
         height: 25px;
         padding-top: 7px;
@@ -159,11 +159,12 @@ body {
 }
 
 .sidebar {
+  /* position: fixed; */
   height: 100%;
   width: 230px;
   background-color: white;
   overflow-y: scroll;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .sidebar-items {
@@ -211,33 +212,37 @@ hr {
 
   .show-sidebar {
     display: inline;
-    position: fixed;
+    /* position: fixed; */
     height: auto;
   }
   .filters {
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     height: auto;
-    margin-left: -230px;
+    /* margin-left: -230px; */
     }
 }
 
   
 @media (max-width: 360px) {
   .sidebar {
-    display: flex;
+    display: none;
   }
 
   .show-sidebar {
     display: inline;
-    position: fixed;
+    /* position: fixed; */
     height: auto;
   }
   .filters {
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     height: auto;
     margin-left: 0px;
+    }
+
+    .video-section{
+      flex-direction: column;
     }
 }
 
@@ -245,20 +250,31 @@ hr {
 
 /* filter option starts here */
 
+.base{
+  display: flex;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
 .filters{
-  position: fixed;
-  left: 232px;
-  top: 60px;
+  /* position: fixed; */
+  /* left: 232px;
+  top: 60px; */
   width: 100%;
-  height: 60px;
+  height: auto;
   background: #fff;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* overflow: scroll; */
+  text-overflow: clip;
 }
 
 .filters::-webkit-scrollbar{
@@ -295,11 +311,13 @@ body {
 }
 
 .video-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 2fr)); */
   gap: 2rem 1rem;
-  padding: 3rem 0;
-  margin: 0 1.5rem;
+  /* padding: 3rem 0;
+  margin: 0 1.5rem; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 4px solid #CCC;
 }
 
@@ -399,6 +417,11 @@ body {
 
 .videos {
   background-color: #F9F9F9;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  width: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .categories {
